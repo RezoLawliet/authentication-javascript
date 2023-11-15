@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/app.js" defer></script>
+</head>
+<body>
+    <div class="warning hidden" id="warning"></div>
+    <div class="main-container">
+        <section class="auth-sidebar">
+            <h1 class="auth-sidebar-sublime">Design is my weak side</h1>
+            <video class="auth-sidebar-video" src="resource/videos/01.webm" autoplay muted loop></video>
+        </section>
+        <section class="auth-container">
+            <div class="auth-content">
+                <h2 class="auth-header">Sign In Form</h2>
+                <div class="auth-connections">
+                    <form class="auth-google" action="#">
+                        <button class="auth-submit" name="submit" type="submit">
+                            <img class="auth-submit-icon" src="resource/images/google-icon.svg" alt="Google">
+                            Sign In with Google
+                        </button>
+                    </form>
+                    <form class="auth-github" action="#">
+                        <button class="auth-submit" name="submit" type="submit">
+                            <img class="auth-submit-icon" src="resource/images/github-icon.svg" alt="GitHub">
+                            Sign In with GitHub
+                        </button>
+                    </form>
+                </div>
+                <hr class="auth-divider">
+                <div class="auth-interaction">
+                    <form class="auth-main" id="auth-main" action="#">
+                        <div class="auth-input-container">
+                            <label for="email">Email</label>
+                            <input class="auth-input" name="email" id="email" type="text" autocomplete="off" autocorrect="off">
+                        </div>
+                        <div class="auth-input-container">
+                            <label for="password">Password<a class="auth-link" href="#">Forgot?</a></label>
+                            <input class="auth-input" name="password" id="password" type="password" autocomplete="off" autocorrect="off">
+                        </div>
+                        <button class="auth-submit" name="submit" type="submit">Sign In</button>
+                        <p class="auth-details">Don't have an account?&nbsp;<a class="auth-link" href="#">Join us</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
